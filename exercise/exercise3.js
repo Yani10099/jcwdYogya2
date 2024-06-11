@@ -67,6 +67,8 @@ console.log(result1);
 
 
 
+
+
 //no 6
 const nama = "hello world";
 function capitalize_Words(str){

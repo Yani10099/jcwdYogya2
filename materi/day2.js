@@ -95,7 +95,7 @@ str === "javascript"
 //hingga kondisinya tidak dipenuhi, if stop it false, if run is true
 //type loop : for loop, while loop, do while loopp
 
-//FOR LOOP --> memnyuai 3 statement
+//FOR LOOP --> mempunyuai 3 statement
 //statement 1 : menginisialisasi variable dari looping itu sendiri
 //statement 2 : mendefine kondisi dari looping tersebut
 //statement 3 : kode yang di eksekusi di akhir setiap literasi
@@ -119,7 +119,12 @@ while(i<20) {
 
 //DO WHILE LOOP <mesti tau ya buat interview)
 
-let count = 1
+let count = 6;
+
+do{
+    console.log("ini iterasi ke : " + count);
+    count++;
+} while (count <= 5);
 
 
 
@@ -150,3 +155,10 @@ for (let i = 0; i < 5; i++) {
    
     console.log("hello");
 }
+
+for (let i = 0; i < 5; i++){
+    if (i === 3) continue;
+
+    console.log("i = " + 1);
+}
+
