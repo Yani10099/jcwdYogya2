@@ -7,20 +7,16 @@
 //     console.log("anda bisa buat ktp");
 // }
 
-
-
-
 // //ELSE IF STATEMENT =========================================
 // //memberikan kondisi lain pada if statement
 
 // //const grade = "A";
 
-
 // //if (grade ==="A"); {
 // //    console.log("nilai bagus");
 // // } else if (grade === "B"){
 // //    console.log("nilai lumayan");
-//  //} 
+//  //}
 
 //  //SWITCH CASE
 
@@ -34,7 +30,6 @@
 //         console.log("hari selasa");
 //         break;
 //  }
-
 
 //  //truthy and falsy values --> da di ujian
 
@@ -75,20 +70,20 @@
 
 const str = "javascript";
 
-if(str === "javascript") {
-    console.log("javascript");
+if (str === "javascript") {
+  console.log("javascript");
 } else {
-    console.log("not javascript");
+  console.log("not javascript");
 }
 //       condition                      true                            false
 console.log(str === "javascript" ? "javascript" : "not javascript");
 
-console.log( 'javascript')
+console.log("javascript");
 str === "javascript"
-    ? "javascript"
-    : str === "typescript"
-    ? "typescript"
-    : "not found"
+  ? "javascript"
+  : str === "typescript"
+  ? "typescript"
+  : "not found";
 
 // loop statement-> ulangan
 // rangkaian instruksi yang dilakukan berulangkali
@@ -105,14 +100,14 @@ str === "javascript"
 
 // for loop
 
-for(let i = 0; i < 3; i++){
-    //code block
-    console.log("hello world");
+for (let i = 0; i < 3; i++) {
+  //code block
+  console.log("hello world");
 }
 
 //WHILE LOOP ============================================================================================================
 let i = 0;
-while(i<20) {
+while (i < 20) {
   console.log("hello wolrd");
   i++;
 }
@@ -121,44 +116,40 @@ while(i<20) {
 
 let count = 6;
 
-do{
-    console.log("ini iterasi ke : " + count);
-    count++;
+do {
+  console.log("ini iterasi ke : " + count);
+  count++;
 } while (count <= 5);
 
-
-
-
 do {
-    console.log("ini iterasi ke : " + count);
-    count++;
+  console.log("ini iterasi ke : " + count);
+  count++;
 } while (count <= 5);
 
 //BREAK==============================================================================================
 //untuk menghentikan loop
 
-let sum = 0
+let sum = 0;
 
-while(true){
-    console.log("sum = " + sum);
+while (true) {
+  console.log("sum = " + sum);
 
-    if (sum >= 5) break; //bisa return bisa break
+  if (sum >= 5) break; //bisa return bisa break
 
-    sum += 1;
+  sum += 1;
 }
 
 // CONTINUE==========================================================================================
 // melakukan skip pada looping tertentu
 
 for (let i = 0; i < 5; i++) {
-   //if (i === 3) continue;
-   
-    console.log("hello");
+  //if (i === 3) continue;
+
+  console.log("hello");
 }
 
-for (let i = 0; i < 5; i++){
-    if (i === 3) continue;
+for (let i = 0; i < 5; i++) {
+  if (i === 3) continue;
 
-    console.log("i = " + 1);
+  console.log("i = " + 1);
 }
-

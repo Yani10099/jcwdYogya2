@@ -3,48 +3,45 @@
 
 const myArray = [12, 5, 23, 18, 4, 45, 32];
 
-let min = myArray [0];
-let max = myArray [0];
+let min = myArray[0];
+let max = myArray[0];
 let total = 0;
 
-for (let i = 0; i < myArray.length; i++){
-    if (myArray[i]>max){
-        max = myArray[i];
-    }
-    else if (myArray[i] < min) {
-        min = myArray[i];
-    }
-    total += myArray[i];
+for (let i = 0; i < myArray.length; i++) {
+  if (myArray[i] > max) {
+    max = myArray[i];
+  } else if (myArray[i] < min) {
+    min = myArray[i];
+  }
+  total += myArray[i];
 }
 
 console.log(max);
 console.log(min);
-console.log(total/myArray.length);
-
+console.log(total / myArray.length);
 
 //tidak dapat mengubah nilai setelah inisiasi jadi menggunakan let
 // rumus web : https://teamtreehouse.com/community/finding-average-minimum-and-maximum-value-in-an-array
-
 
 //no 2
 //Write a function that takes an array of words and returns a string by concatenating the words in the array,
 //separated by commas and - the last word - by an 'and'.
 //a. Example : arr = ["apple", "banana", "cherry", "date"] → “apple,banana,cherry, and date”
 
-const array2 = ["apple", "banana", "cherry", "date"]
+const array2 = ["apple", "banana", "cherry", "date"];
 
-const output = array2.reduce(function(acc, cur, i){
-    let str = acc ;
-    str += cur;
+const output = array2.reduce(function (acc, cur, i) {
+  let str = acc;
+  str += cur;
 
-    if (i < array2.length - 2){
-        str += ' , '; 
-    } else if (i < array2.length -1){
-        str +=' , and ';
-    }
-    
-    return str;
-})
+  if (i < array2.length - 2) {
+    str += " , ";
+  } else if (i < array2.length - 1) {
+    str += " , and ";
+  }
+
+  return str;
+});
 
 console.log(output);
 
@@ -55,7 +52,7 @@ console.log(output);
 // a. Example : “Hello World” → [“Hello”, “World”]
 
 string_to_array = function (str) {
-    return str.trim().split("");
+  return str.trim().split("");
 };
 
 console.log(string_to_array("Hello World"));
@@ -74,13 +71,13 @@ console.log(resultt);
 //of the same length.
 //a. Example : [1, 2, 3] + [3, 2, 1] → [4, 4, 4]
 
-const array3 = [1,2,3];
-const array4 = [3,2,1];
+const array3 = [1, 2, 3];
+const array4 = [3, 2, 1];
 
 let sum = [];
 
-for (let i = 0; i <array3.length; i++){
-    sum.push(array3[i] + array4[i]);
+for (let i = 0; i < array3.length; i++) {
+  sum.push(array3[i] + array4[i]);
 }
 
 console.log(sum);
@@ -99,16 +96,16 @@ console.log(sum);
 // a. Example : numbers = [1, 2, 3, 4, 5, 6] → [2, 4, 6]
 
 const myArray6 = [1, 2, 3, 4, 5, 6];
-let it = myArray.length
+let it = myArray.length;
 
-for(let i = 0; i < it; i++){
-    for(let j = 0; j <myArray6.length; j++){
-        console.log('checking:', myArray6[j])
-        if(myArray[j] % 2 === 1) {
-            myArray.splice(j,1)
-            break
-        }
+for (let i = 0; i < it; i++) {
+  for (let j = 0; j < myArray6.length; j++) {
+    console.log("checking:", myArray6[j]);
+    if (myArray[j] % 2 === 1) {
+      myArray.splice(j, 1);
+      break;
     }
+  }
 }
 
 console.log(myArray6);
@@ -127,18 +124,18 @@ console.log(myArray6);
 //Write a function that will combine 2 given array into one array
 // a. Example : arr1 = [1, 2, 3], arr2 = [4, 5, 6] → [1, 2, 3, 4, 5, 6]
 
-const arr1 = ['1','2','3'];
-const arr2 = ['4','5','6'];
+const arr1 = ["1", "2", "3"];
+const arr2 = ["4", "5", "6"];
 
-function createDeck(){
-    let customArray = [];
+function createDeck() {
+  let customArray = [];
 
-    if (arr1.length === arr2.length){
-        customArray = arr1.map((arr1, index) => {
-            return arr1 + arr2[index]
-        })
-    }
-    return customArray;
+  if (arr1.length === arr2.length) {
+    customArray = arr1.map((arr1, index) => {
+      return arr1 + arr2[index];
+    });
+  }
+  return customArray;
 }
 
 console.log(createDeck());
@@ -151,20 +148,21 @@ console.log(arr1.concat(arr2));
 // //Write a function to find duplicate values in an array
 // a. Example : arr = [1, 2, 2, 2, 3, 3, 4, 5, 5] → [2, 3, 5]
 
-
 //indexOf()method
 
-const arr4 = [1, 2, 2, 2, 3, 3, 4, 5, 5]
+const arr4 = [1, 2, 2, 2, 3, 3, 4, 5, 5];
 let duplicates = [];
 
-arr4.forEach(function (value, index, array){
-    if (arr4.indexOf(value, index +1) !== -1 && duplicates.indexOf(value) === -1) {
-        duplicates.push(value);
-    }
+arr4.forEach(function (value, index, array) {
+  if (
+    arr4.indexOf(value, index + 1) !== -1 &&
+    duplicates.indexOf(value) === -1
+  ) {
+    duplicates.push(value);
+  }
 });
 
 console.log("Duplicates values:", duplicates);
-
 
 //referense : https://www.geeksforgeeks.org/javascript-program-to-find-duplicate-elements-in-an-array/
 
@@ -176,21 +174,20 @@ const arrr1 = [1, 2, 3, 4, 5];
 const arrr2 = [3, 4, 5, 6, 7];
 
 function diff(arrr1, arrr2) {
-    let newArray = [];
+  let newArray = [];
 
-    for ( let i=0;i<arrr1.length;i++){
-        for (let j=0;j<arrr2.length;j++){
-            if (arrr1[i]===arrr2[j]){
-
-                arrr1.splice(i, 1); //kita guna splice for eliminate the same number
-                arrr2.splice(j, 1);
-                i--; // agar elemen tidak terlewat
-                break;  //untuk menghentikan eksekusi loop waktu dia elemen yang cocok sudah ditemukan  
-            }
-        }
+  for (let i = 0; i < arrr1.length; i++) {
+    for (let j = 0; j < arrr2.length; j++) {
+      if (arrr1[i] === arrr2[j]) {
+        arrr1.splice(i, 1); //kita guna splice for eliminate the same number
+        arrr2.splice(j, 1);
+        i--; // agar elemen tidak terlewat
+        break; //untuk menghentikan eksekusi loop waktu dia elemen yang cocok sudah ditemukan
+      }
     }
-    newArrrrr = arrr1.concat(arrr2);
-    return newArrrrr;
+  }
+  newArrrrr = arrr1.concat(arrr2);
+  return newArrrrr;
 }
 
 console.log(diff([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
@@ -201,11 +198,17 @@ console.log(diff([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
 // //Based on the array below write a function that will return primitive data types only. let
 // arr = [1, [], undefined, {}, "string", {}, []];
 
-function getPrimitiveTypes(arr){ //getPrimitiveTyppes menerima parameter array
-    return arr.filter(item => { //filter untuk menyaring elemen array
-        return typeof item !== 'object' && typeof item !== 'function' && typeof item !== 'underfined';
-    });  //type of untuk cek tipe data elemen tidak termasuk dalam tipe data objeck
-    }
+function getPrimitiveTypes(arr) {
+  //getPrimitiveTyppes menerima parameter array
+  return arr.filter((item) => {
+    //filter untuk menyaring elemen array
+    return (
+      typeof item !== "object" &&
+      typeof item !== "function" &&
+      typeof item !== "underfined"
+    );
+  }); //type of untuk cek tipe data elemen tidak termasuk dalam tipe data objeck
+}
 let arr = [1, [], undefined, {}, "string", {}, []];
 console.log(getPrimitiveTypes(arr)); //output argumen
 
@@ -216,8 +219,10 @@ console.log(getPrimitiveTypes(arr)); //output argumen
 // a. Example : numbers = [5, 3, 1, 7, 2, 6] → 2  #Themallest
 
 function secondSmallest(numbers) {
-    numbers.sort((a,b) => { return a - b; });
-    return numbers[1];
+  numbers.sort((a, b) => {
+    return a - b;
+  });
+  return numbers[1];
 }
 
 let numbers = [5, 3, 1, 7, 2, 6];
@@ -228,21 +233,19 @@ console.log(secondSmallest(numbers));
 // a. Example : mixedArray = ["3", 1, "string", null, false, undefined, 2] → 3
 
 function sum0fNumbers(mixedArray) {
-    let sum = 0;
-    for ( let i = 0; i < mixedArray.length; i++) {
-        if (!isNaN(Number(mixedArray[i]))){
-            sum += Number(mixedArray[i]);
-        }
-        
+  let sum = 0;
+  for (let i = 0; i < mixedArray.length; i++) {
+    if (!isNaN(Number(mixedArray[i]))) {
+      sum += Number(mixedArray[i]);
     }
-    return sum
+  }
+  return sum;
 }
-
 
 const mixedArray = ["3", 1, "string", null, false, undefined, 2];
 console.log(sum0fNumbers(mixedArray));
 
-//reference : 
+//reference :
 
 //no 14
 // Write a function from the below array of number that will return sum of duplicate values. let
@@ -253,7 +256,6 @@ console.log(sum0fNumbers(mixedArray));
 //     let seen = {};
 //     let duplicates = [];
 //     let total = 0;
-
 
 //     arr.forEach(num => {
 //         if (seen[num]){
@@ -276,27 +278,26 @@ console.log(sum0fNumbers(mixedArray));
 //no15
 //membuat game batu gunting kertas
 
-function rockPaperScissors(playerThrow){
-    const throws = ['rock', 'paper', 'scissors'];
-    const computerThrow = throws[Math.floor(Math.random()* throws.length)];
+function rockPaperScissors(playerThrow) {
+  const throws = ["rock", "paper", "scissors"];
+  const computerThrow = throws[Math.floor(Math.random() * throws.length)];
 
-    console.log("Computer throws:" + computerThrow);
+  console.log("Computer throws:" + computerThrow);
 
-    if (playerThrow === computerThrow){
-        return 'Draw';
-    } else if (
-        (playerThrow === 'rock' && computerThrow === 'scissors') ||
-        //gamer memilih batu, computer memilih gunting
-        (playerThrow === 'paper' && computerThrow === 'rock') ||
-        //gamer memilih paper, dan computer memilih batu
-        (playerThrow === 'scissors' && computerThrow === 'paper')
-        //games memilih gunting, comp memilih papaer
-    ) {
-        return 'Lose';
-    } else {
-        return 'Win'
-    }
-} 
+  if (playerThrow === computerThrow) {
+    return "Draw";
+  } else if (
+    (playerThrow === "rock" && computerThrow === "scissors") ||
+    //gamer memilih batu, computer memilih gunting
+    (playerThrow === "paper" && computerThrow === "rock") ||
+    //gamer memilih paper, dan computer memilih batu
+    (playerThrow === "scissors" && computerThrow === "paper")
+    //games memilih gunting, comp memilih papaer
+  ) {
+    return "Lose";
+  } else {
+    return "Win";
+  }
+}
 
-console.log(rockPaperScissors('rock'));
-
+console.log(rockPaperScissors("rock"));

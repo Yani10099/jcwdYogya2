@@ -1,4 +1,3 @@
-
 //JAVASCRIPT -> buat web pages, machine learnin, iot, etc.
 
 //console.log untuk munculin ke terminal
@@ -28,7 +27,7 @@ console.log(caree);
 
 //sebab variable var membuat double variable, if kita sudah membuat coding kita memsti remember semua coding kita. kelemahan var, jadi kita tidak menggunakan var lagi
 
-//variable let 
+//variable let
 
 //variable let bisa mereplace isi dari variable tersebut
 
@@ -52,7 +51,7 @@ console.log(caree4);
 
 //console4 = "preety" -> tidak bisa diganti
 
-isPaid = false
+isPaid = false;
 
 //VARIABLE NAMING
 //must contain only letters, digits, or symbol "$" and "_"
@@ -75,14 +74,14 @@ isPaid = false
 let count1 = 4;
 let count2 = count1;
 
-count2=10
+count2 = 10;
 
 console.log(count1);
 console.log(count2);
 
 //mutable -> object di tandai kurung kurawal
 
-let caree5 = {name : "cantik8"};
+let caree5 = { name: "cantik8" };
 let caree9 = caree5;
 caree9.hobby = "Photo";
 
@@ -92,25 +91,22 @@ console.log(caree9);
 // String build in method
 
 const nama = "CaNtIk18";
-const nama2 = "NewCaNtIk109"
+const nama2 = "NewCaNtIk109";
 
 console.log(nama.toLocaleLowerCase());
 console.log(nama.toUpperCase());
-console.log(nama.replace("I","Y"));
-console.log(nama.replaceAll("a","I"));
+console.log(nama.replace("I", "Y"));
+// console.log(nama.replaceAll("a","I"));
 console.log(nama.split(""));
 console.log(nama.split(""));
 console.log(nama.concat(nama2));
 console.log(nama.slice(0, 2));
 console.log(nama.slice(0, 5));
 
-
-
 //buat search
 const nama22 = "CaNtIk18".toLowerCase();
 
-console.log(nama22.replace("a","E"));
-
+console.log(nama22.replace("a", "E"));
 
 // TEMPLATE LITERALS -> TEMPLATE STRING
 
@@ -142,26 +138,25 @@ console.log(String(123));
 
 const num = "3" * "3";
 
-const num2 = "1" + 1
+const num2 = "1" + 1;
 
 console.log(num);
 
 console.log(num2);
 
-const num3 = 1 + "1" + 1 //baca dari kiri ke kanan
+const num3 = 1 + "1" + 1; //baca dari kiri ke kanan
 
 //simpan nombor telepon -> string
 //string + number = string
 // number + string + number - > string , jadi hasil jdi "111"
 
-const num4 = 1 + 1 + "1" // hasil jdi 21
+const num4 = 1 + 1 + "1"; // hasil jdi 21
 
 console.log(Boolean(-120));
 console.log(Boolean(1));
 console.log(Boolean(0));
 
 console.log(Boolean("false"));
-
 
 // Bollean Conversation
 console.log(Boolean(1));
@@ -171,7 +166,7 @@ console.log(Boolean("0"));
 console.log("false");
 
 //DATE
-const tudoy = new Date();  //jam nya +UTC ya bukan jam jadwal tayangan doraemon
+const tudoy = new Date(); //jam nya +UTC ya bukan jam jadwal tayangan doraemon
 
 console.log(tudoy);
 
@@ -184,7 +179,6 @@ console.log(tudoy.getDate());
 tudoy.setDate(34);
 //tudoy.setFullYear(2027);
 console.log(tudoy);
-
 
 // Basic Operator -> +, -, *, /, % (sisa bagi), **
 
@@ -200,7 +194,7 @@ console.log(3 ** 2);
 //MODIFY IN PLACE
 //n = n + 2
 
-let n = 4 
+let n = 4;
 
 //n = n + 2;
 
@@ -208,7 +202,6 @@ let n = 4
 // n +=2 ->> n = n + 2 -> cara pendek
 
 console.log(n);
-
 
 //INCREMENT & DECREMENT
 let counter = 2;
@@ -229,9 +222,9 @@ console.log(counter2);
 
 //learn Comparis Operator
 
-5 == 5 //true
-5 == 1 //false
+5 == 5; //true
+5 == 1; //false
 
-console.log(5 == 5)
-console.log(5 ==1);
-console.log( 5 !== 5);
+console.log(5 == 5);
+console.log(5 == 1);
+console.log(5 !== 5);
