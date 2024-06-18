@@ -60,3 +60,8 @@ if (score === "A") {
 //     default:
 //         console.log(`Sorry, we are out of ${export}.`);
 // }
+
+let s = []; // mendefinisikan sebuah array kosong
+s.push(1); // menambah angka 1 ke dalam array s
+s.push(2); // menambah angka 2 ke dalam array s
+console.log(s); //output: [1,2]
