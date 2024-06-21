@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop - Catalog</title>
+  </head>
+  <body style="margin: 0">
+    <h1
+      style="
+        text-align: center;
+        color: white;
+        background-color: rgb(24, 184, 24);
+        padding: 20px;
+        margin: 0;
+      "
+    >
+      WELCOME
+    </h1>
+    <h1 style="background-color: aquamarine">Online Shop - Catalog</h1>
+    <ul>
+      <% products.forEach(product => { %>
+      <li>
+        <%= product.nama %> - Stock: <%= product.stock %> - Price: Rp <%=
+        product.price %>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop - Cart</title>
+  </head>
+  <body>
+    <h1 style="background-color: aquamarine">Online Shop - Cart</h1>
+    <ul>
+      <% cartItems.forEach(item => { %>
+      <li>
+        <%= item.product.nama %> - Jumlah: <%= item.jumlah %> - Total Harga: Rp
+        <%= item.product.price * item.jumlah %>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

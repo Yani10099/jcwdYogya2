@@ -65,3 +65,38 @@ let s = []; // mendefinisikan sebuah array kosong
 s.push(1); // menambah angka 1 ke dalam array s
 s.push(2); // menambah angka 2 ke dalam array s
 console.log(s); //output: [1,2]
+
+/*
+
+class > ES6, blueprint > template guna dimana saja class di inisiasi
+class buat mpermudah kita dalam mengelola data, nilai, variable dan property
+
+
+saat membuat object dilakukan dg manual dan berulang > is not good practice
+
+
+kita hanya perlu membuat classnya saja dan mendefinisikan isi dari class tersebut
+class untuk menjaga str
+
+Di dalam class :
+>method 
+> data variable
+>object
+
+
+> mendefinisikan nama dan berikan property atau parameter
+panggil class di ikuti dg parameter untuk membuat object secara otomatis
+
+
+*/
+
+/*
+object > data berisi field / property / attribute atau method/  function/ behavior
+
+class > blueprint, prototype > berisi deklarasi semua properties dan fungsi yang dimiliki oleh object
+object selalu di buat dari klass.
+sebuah clkass bisa membuat object untlimited
+
+*/
+
+//gitu mana yg msh otw project  u ta
