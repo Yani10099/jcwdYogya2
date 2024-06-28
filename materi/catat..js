@@ -10,7 +10,7 @@ let people = {
   age: 10,
 };
 
-//for loop >> untuk menjalankan blok kode yang berulang dengan literasi tertentu
+//for loop >> untuk menjalankan blok kode yang berulang dengan iterasi tertentu
 
 for (let i = 0; i < 10; i++) {
   console.log(i);
@@ -24,6 +24,7 @@ let age = 10;
 
 if (age > 35) {
   console.log("Adult");
+  -0;
 } else {
   console.log("Kids");
 }
@@ -77,6 +78,7 @@ console.log(stack.pop());
 let queue = [];
 queue.push(1);
 queue.push(2);
+console.log(queue);
 queue.shift(); // 1 (FIFO)
 console.log(queue.shift());
 
@@ -106,7 +108,6 @@ console.log(colors);
 
 const agee = 10;
 let status = agee >= 18 ? "Adult" : "CaKids";
-
 console.log(status);
 
 //Comparation Operator (Operator Perbandingan);
@@ -128,7 +129,68 @@ O(n): Waktu Linear
 */
 
 // Hoisting
-//Javascript behave yang mengangkat deklarasi variabel dan fungsi ke bagian atas dari lingkup mereka
+//Javascript behave yang mengangkat deklarasi variabel dan fungsi ke bagian
+// flexible boleh ke atas boleh ke bawah, itu hnya variable var dg function declaration saja
+// function ekspression tidak bisa
 
 console.log(myDate); //underfined
 const myDate = 10;
+
+console.log(null); //hasilnya Object
+
+console.log(typeof 123); //number
+
+console.log(typeof "Yanca"); //tipe data is string
+
+//Perbedaan var > variable diguanakan global
+//Perbedaan let > variable yang bisa di ubah
+//Perbedaan const > varibale yang tidak bisa di ubah
+
+//Splice adalah fungsi dalam array, untuk mengubah
+// splice mengubah konten dari sebuah array dengan menghapus, menambahkan,
+//elemen di dalamnya. atau mengurangi, menambah atau merubah value dalam array
+//cara menggunakan dari indeksnya
+
+//apa itu shift??
+//suatu function build in method dari element depan dalam array
+
+//
+
+let number = 20 * 10;
+number = 10;
+console.log(number); //output jdi 10
+
+// hasil reassign > hasil nya di ubah
+
+//Perbedaan For Each dg For Map
+
+//for Each digunaay bkan untuk mengeksekusi sebuah fungsi callback untuk setiap elemen dalam array.
+//karakteristik For Each : tidak mengembalikan nilai apapun (undefined), Digunakan untuk menjalankan operasi setiap elemen array tanpa mengubah array asli
+//tidak menghasilkan array ni baru
+
+//For Map
+//dibuat untuk membuat array ni bairu dengan hasil dari pemanggsilan fungsi callback pada setiap elemen dg array yg ada.
+//mengembalikan array ni baru, transformasi array, tidak mengubah array asli `map`
+
+//tujuan for Each diguankan ketika anda ingin menjalankan operasi untuk setiap elemen array tanpa memperhatikan nilai kembali
+//map untuk waktu menjalankan operasi untuk setiap elemen array tanpa memperhatikan nilai kembali.
+
+//convert string ke number (44XX) > hasil NaN karena huruf dg string tidak bisa
+//if number tidak da huruf bisa
+
+// tidak bisa membuat variable menggunakan strip. tetapi bisa menggunakan (_) atau huruf capital
+// constnama_Qamu  atau constnamaQamu
+
+// Huruf depan capital bisa untuk membuat variable tetapi bukan best practice
+// huruf depan capital untuk buat class
+
+//stack untuk concept LIFO
+//queue untuk conccept FIFO
+
+//"20" * 2 > 40 > string if dg * bisa jdi output
+
+//apa itu dia function scope
+//variable nya lokal > variable tersebut hanya berfungsi di tempat ia di deklarasikan
+//Nested Scope > fungsi yang satu dapat  dibuat difungsi yang lain
+//variable yang di deklarasikan di dalam fungsi dalam akan tetap terbatas pada fungsi tersebut, meskipun ada fungsi luar yang menutupinya
+//inner var/ const hnya dpt di akses di dlm fungsi scope
